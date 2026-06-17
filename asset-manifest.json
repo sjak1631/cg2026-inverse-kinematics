@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cg2026-inverse-kinematics/static/css/main.f5b21c72.css",
+    "main.js": "/cg2026-inverse-kinematics/static/js/main.756d81ba.js",
+    "index.html": "/cg2026-inverse-kinematics/index.html",
+    "main.f5b21c72.css.map": "/cg2026-inverse-kinematics/static/css/main.f5b21c72.css.map",
+    "main.756d81ba.js.map": "/cg2026-inverse-kinematics/static/js/main.756d81ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5b21c72.css",
+    "static/js/main.756d81ba.js"
+  ]
+}
