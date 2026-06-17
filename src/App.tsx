@@ -2,8 +2,9 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import { IKCanvas } from './components/IKCanvas';
 import { ChainCanvas } from './components/ChainCanvas';
 import { Controls } from './components/Controls';
+import { BenchmarkView } from './components/BenchmarkView';
 import { IKResult, PoseMode, CharacterState } from './ik/types';
-import { createRandomTargetPose, computeMatchRate } from './ik/challenge';
+import { createRandomTargetPose } from './ik/challenge';
 import './styles.css';
 
 type Phase = 'idle' | 'active';
@@ -101,11 +102,7 @@ export default function App() {
     <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
       <AppTabs appMode={appMode} setAppMode={setAppMode} />
       {appMode === 'analyze' ? (
-        <iframe
-          src="/benchmark.html"
-          style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
-          title="Analyze"
-        />
+        <BenchmarkView />
       ) : (
         <>
           {mechanism === 'chain'
